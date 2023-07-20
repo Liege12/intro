@@ -26,7 +26,7 @@ function observeHelperLayer() {
 }
 observeHelperLayer();
 
-function IntroTour(language) {
+function nrzIntroTour(language) {
   var translations = {
     intro: {
       english: 'Welcome to the course! This is the slide area where the course content will be displayed. Use the navigation buttons to move between slides.',
@@ -87,130 +87,52 @@ function IntroTour(language) {
       french: 'Si vous souhaitez revenir à la diapositive précédente, utilisez le bouton "Précédent". Il vous ramènera au sujet ou module précédent.',
       mandarin: '如果您想返回上一张幻灯片，请使用“上一页”按钮。它将使您导航到前一个主题或模块。',
       portuguese: 'Se você deseja voltar para o slide anterior, use o botão "Anterior". Ele irá levá-lo de volta ao tópico ou módulo anterior.'
-    },
-     caption: {
-      english: 'You can turn on your caption to display the information on the screen.',
-      arabic: 'إذا كنت ترغب في العودة إلى الشريحة السابقة، استخدم زر "السابق". سيوجهك إلى الموضوع أو الوحدة السابقة.',
-      urdu: 'اگر آپ پچھلی سلائیڈ پر واپس جانا چاہتے ہیں تو "پچھلا" بٹن استعمال کریں. یہ آپ کو کورس میں پچھلے موضوع یا ماڈیول پر نیویگیٹ کرے گا.',
-      dutch: 'Als je terug wilt naar de vorige dia, gebruik dan de knop "Vorige". Het zal je naar het vorige onderwerp of module navigeren.',
-      spanish: 'Si deseas volver a la diapositiva anterior, utiliza el botón "Anterior". Te llevará al tema o módulo anterior.',
-      french: 'Si vous souhaitez revenir à la diapositive précédente, utilisez le bouton "Précédent". Il vous ramènera au sujet ou module précédent.',
-      mandarin: '如果您想返回上一张幻灯片，请使用“上一页”按钮。它将使您导航到前一个主题或模块。',
-      portuguese: 'Se você deseja voltar para o slide anterior, use o botão "Anterior". Ele irá levá-lo de volta ao tópico ou módulo anterior.'
-    },
-    titles: {
-      english: {
-        slide: 'Slide',
-        resources: 'Helpful Resources',
-        menu: 'Course Menu',
-        playback: 'Slide Playback Control',
-        next: 'Next Slide Button',
-        prev: 'Prev Slide Button',
-        next: 'Caption Button',
-      },
-      arabic: {
-        slide: 'الشريحة',
-        resources: 'موارد مفيدة',
-        menu: 'قائمة الدورة',
-        playback: 'تحكم تشغيل الشرائح',
-        next: 'زر التالي',
-        prev: 'زر السابق'
-      },
-      urdu: {
-        slide: 'سلائیڈ',
-        resources: 'مددگار وسائل',
-        menu: 'کورس مینو',
-        playback: 'اسلائیڈ پلے بیک کنٹرول',
-        next: 'اگلے سلائیڈ بٹن',
-        prev: 'پچھلے سلائیڈ بٹن'
-      },
-      dutch: {
-        slide: 'Schuif',
-        resources: 'Nuttige bronnen',
-        menu: 'Cursusmenu',
-        playback: 'Afspelen van diavoorstelling bedienen',
-        next: 'Volgende dia knop',
-        prev: 'Vorige dia knop'
-      },
-      spanish: {
-        slide: 'Diapositiva',
-        resources: 'Recursos útiles',
-        menu: 'Menú del curso',
-        playback: 'Control de reproducción de diapositivas',
-        next: 'Botón de siguiente diapositiva',
-        prev: 'Botón de diapositiva anterior'
-      },
-      french: {
-        slide: 'Diapositive',
-        resources: 'Ressources utiles',
-        menu: 'Menu du cours',
-        playback: 'Contrôle de lecture des diapositives',
-        next: 'Bouton de diapositive suivante',
-        prev: 'Bouton de diapositive précédente'
-      },
-      mandarin: {
-        slide: '幻灯片',
-        resources: '有用资源',
-        menu: '课程菜单',
-        playback: '幻灯片播放控制',
-        next: '下一张幻灯片按钮',
-        prev: '上一张幻灯片按钮'
-      },
-      portuguese: {
-        slide: 'Slide',
-        resources: 'Recursos úteis',
-        menu: 'Menu do curso',
-        playback: 'Controle de reprodução de slides',
-        next: 'Botão de próximo slide',
-        prev: 'Botão de slide anterior'
-      }
     }
   }
-
   introJs().setOptions({
     steps: [
       {
         element: '.acc-blocker',
         intro: translations['intro'][language],
-        title: translations['titles'][language]['slide'],
+        title: 'Slide',
       },
       {
         element: '#links-right',
         intro: translations['resources'][language],
-        title: translations['titles'][language]['resources'],
+        title: 'Helpful Resources',
       },
       {
         element: '#outline-content',
         intro: translations['menu'][language],
-        title: translations['titles'][language]['menu'],
+        title: 'Course Menu',
       },
       {
         element: '#playback-controls',
         intro: translations['playback'][language],
-        title: translations['titles'][language]['playback'],
+        title: 'Slide Playback Control',
       },
 	  {
         element: '#prev',
         intro: translations['prev'][language],
-        title: translations['titles'][language]['prev'],
+        title: 'Prev Slide Button',
       },
       {
         element: '#next',
         intro: translations['next'][language],
-        title: translations['titles'][language]['next'],
+        title: 'Next Slide Button',
       }
-
-      {
-        element: '#caption',
-        intro: translations['caption'][language],
-        title: translations['caption'][language]['caption'],
-      }
+      
     ],
+	 onafterchange: function () {
+      updateHelperCSS();
+    }
   }).start();
+  
   observeHelperLayer();
+  
 }
-/// Without SeekBar
-function IntroTourWithoutSeekbar(language) {
+
+function nrzIntroTourWithoutSeekbar(language) {
   var translations = {
     intro: {
       english: 'Welcome to the course! This is the slide area where the course content will be displayed. Use the navigation buttons to move between slides.',
@@ -271,121 +193,42 @@ function IntroTourWithoutSeekbar(language) {
       french: 'Si vous souhaitez revenir à la diapositive précédente, utilisez le bouton "Précédent". Il vous ramènera au sujet ou module précédent.',
       mandarin: '如果您想返回上一张幻灯片，请使用“上一页”按钮。它将使您导航到前一个主题或模块。',
       portuguese: 'Se você deseja voltar para o slide anterior, use o botão "Anterior". Ele irá levá-lo de volta ao tópico ou módulo anterior.'
-    },
-    caption: {
-      english: 'You can turn on the caption to display the information on the screen.',
-      arabic: 'إذا كنت ترغب في العودة إلى الشريحة السابقة، استخدم زر "السابق". سيوجهك إلى الموضوع أو الوحدة السابقة.',
-      urdu: 'اگر آپ پچھلی سلائیڈ پر واپس جانا چاہتے ہیں تو "پچھلا" بٹن استعمال کریں. یہ آپ کو کورس میں پچھلے موضوع یا ماڈیول پر نیویگیٹ کرے گا.',
-      dutch: 'Als je terug wilt naar de vorige dia, gebruik dan de knop "Vorige". Het zal je naar het vorige onderwerp of module navigeren.',
-      spanish: 'Si deseas volver a la diapositiva anterior, utiliza el botón "Anterior". Te llevará al tema o módulo anterior.',
-      french: 'Si vous souhaitez revenir à la diapositive précédente, utilisez le bouton "Précédent". Il vous ramènera au sujet ou module précédent.',
-      mandarin: '如果您想返回上一张幻灯片，请使用“上一页”按钮。它将使您导航到前一个主题或模块。',
-      portuguese: 'Se você deseja voltar para o slide anterior, use o botão "Anterior". Ele irá levá-lo de volta ao tópico ou módulo anterior.'
-    },
-    titles: {
-      english: {
-        slide: 'Slide',
-        resources: 'Helpful Resources',
-        menu: 'Course Menu',
-        playback: 'Slide Playback Control',
-        next: 'Next Slide Button',
-        prev: 'Prev Slide Button'
-        caprion: 'Caption Button'
-      },
-      arabic: {
-        slide: 'الشريحة',
-        resources: 'موارد مفيدة',
-        menu: 'قائمة الدورة',
-        playback: 'تحكم تشغيل الشرائح',
-        next: 'زر التالي',
-        prev: 'زر السابق'
-      },
-      urdu: {
-        slide: 'سلائیڈ',
-        resources: 'مددگار وسائل',
-        menu: 'کورس مینو',
-        playback: 'اسلائیڈ پلے بیک کنٹرول',
-        next: 'اگلے سلائیڈ بٹن',
-        prev: 'پچھلے سلائیڈ بٹن'
-      },
-      dutch: {
-        slide: 'Schuif',
-        resources: 'Nuttige bronnen',
-        menu: 'Cursusmenu',
-        playback: 'Afspelen van diavoorstelling bedienen',
-        next: 'Volgende dia knop',
-        prev: 'Vorige dia knop'
-      },
-      spanish: {
-        slide: 'Diapositiva',
-        resources: 'Recursos útiles',
-        menu: 'Menú del curso',
-        playback: 'Control de reproducción de diapositivas',
-        next: 'Botón de siguiente diapositiva',
-        prev: 'Botón de diapositiva anterior'
-      },
-      french: {
-        slide: 'Diapositive',
-        resources: 'Ressources utiles',
-        menu: 'Menu du cours',
-        playback: 'Contrôle de lecture des diapositives',
-        next: 'Bouton de diapositive suivante',
-        prev: 'Bouton de diapositive précédente'
-      },
-      mandarin: {
-        slide: '幻灯片',
-        resources: '有用资源',
-        menu: '课程菜单',
-        playback: '幻灯片播放控制',
-        next: '下一张幻灯片按钮',
-        prev: '上一张幻灯片按钮'
-      },
-      portuguese: {
-        slide: 'Slide',
-        resources: 'Recursos úteis',
-        menu: 'Menu do curso',
-        playback: 'Controle de reprodução de slides',
-        next: 'Botão de próximo slide',
-        prev: 'Botão de slide anterior'
-      }
     }
   }
-
   introJs().setOptions({
     steps: [
       {
         element: '.acc-blocker',
         intro: translations['intro'][language],
-        title: translations['titles'][language]['slide'],
+        title: 'Slide',
       },
       {
         element: '#links-right',
         intro: translations['resources'][language],
-        title: translations['titles'][language]['resources'],
+        title: 'Helpful Resources',
       },
       {
         element: '#outline-content',
         intro: translations['menu'][language],
-        title: translations['titles'][language]['menu'],
+        title: 'Course Menu',
       },
 	  {
         element: '#prev',
         intro: translations['prev'][language],
-        title: translations['titles'][language]['prev'],
+        title: 'Prev Slide Button',
       },
       {
         element: '#next',
         intro: translations['next'][language],
-        title: translations['titles'][language]['next'],
+        title: 'Next Slide Button',
       }
-
- {
-        element: '#caption',
-        intro: translations['caption'][language],
-        title: translations['caption'][language]['caption'],
-      }
+      
     ],
+	onafterchange: function () {
+      updateHelperCSS();
+    }
   }).start();
+  
   observeHelperLayer();
 }
 //# sourceMappingURL=https://cdn.jsdelivr.net/gh/nrzmalik/IntroTourByNrz/nrzIntroTourMutilLang.js
