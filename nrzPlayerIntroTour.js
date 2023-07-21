@@ -30,7 +30,7 @@ function cnrzIntroTour(language) {
 	//Developed by: @nrzmalik
   var translations = {
     intro: {
-      english: 'Welcome to the course! This is the slide area where the course content will be displayed. Use the navigation buttons to move between slides.',
+      english: 'Welcome to the course! This is the slide area where the course content will be displayed. You can also click on each Icon to navigate across the course. Use the navigation buttons to move between slides.',
       arabic: 'مرحبًا بك في الدورة! هذه هي منطقة الشريحة حيث سيتم عرض محتوى الدورة. استخدم أزرار التنقل للتحرك بين الشرائح.',
       urdu: 'کورس میں خوش آمدید! یہاں سلائیڈ کا علاقہ ہے جہاں کورس کی مواد کی عرض ہوگی. اسلائیڈوں کے درمیان حرکت کرنے کے لئے نیویگیشن بٹن استعمال کریں.',
       dutch: 'Welkom bij de cursus! Dit is het schuifgebied waar de cursusinhoud wordt weergegeven. Gebruik de navigatieknoppen om tussen dia\'s te bewegen.',
@@ -50,7 +50,7 @@ function cnrzIntroTour(language) {
       portuguese: 'Aqui você pode encontrar recursos úteis relacionados ao curso. Clique nos links para acessar materiais adicionais ou referências.'
     },
     menu: {
-      english: 'The course menu is located here. It provides an overview of the course structure and allows you to jump to specific chapter. You can also click on each Icon to navigate across the course.',
+      english: 'The course menu is located here. It provides an overview of the course structure and allows you to jump to specific chapter.',
       arabic: 'يقع قائمة الدورة هنا. يوفر نظرة عامة على هيكل الدورة ويتيح لك الانتقال إلى أقسام أو وحدات محددة.',
       urdu: 'کورس کی مینو یہاں موجود ہے. یہ کورس کی ساخت کا ایک جائزہ دیتی ہے اور آپ کو خاص حصوں یا ماڈیولز میں جانے کی اجازت دیتی ہے.',
       dutch: 'Het cursusmenu bevindt zich hier. Het biedt een overzicht van de cursusstructuur en stelt je in staat om naar specifieke secties of modules te springen.',
@@ -70,7 +70,7 @@ function cnrzIntroTour(language) {
       portuguese: 'Esses controles permitem que você reproduza ou pause a reprodução dos slides. Você pode controlar o ritmo do conteúdo do curso com base em suas preferências.'
     },
     next: {
-      english: 'To move to the next slide, click the "Next" button. It will take you to the next topic or module in the course.',
+      english: 'To move to the next slide, click the "Next" button. It will take you to the next chapter in the course.',
       arabic: 'للانتقال إلى الشريحة التالية، انقر على زر "التالي". سوف ينقلك إلى الموضوع أو الوحدة التالية في الدورة.',
       urdu: 'اگلی سلائیڈ پر منتقل ہونے کے لئے "اگلے" بٹن پر کلک کریں. یہ آپ کو کورس میں اگلے موضوع یا ماڈیول پر لے جائے گا.',
       dutch: 'Klik op de knop "Volgende" om naar de volgende dia te gaan. Het brengt je naar het volgende onderwerp of module in de cursus.',
@@ -80,7 +80,7 @@ function cnrzIntroTour(language) {
       portuguese: 'Para avançar para o próximo slide, clique no botão "Próximo". Ele o levará para o próximo tópico ou módulo no curso.'
     },
     prev: {
-      english: 'If you want to go back to the previous slide, use the "Previous" button. It will navigate you to the previous topic or module.',
+      english: 'If you want to go back to the previous slide, use the "Previous" button. It will navigate you to the previous chapter.',
       arabic: 'إذا كنت ترغب في العودة إلى الشريحة السابقة، استخدم زر "السابق". سيوجهك إلى الموضوع أو الوحدة السابقة.',
       urdu: 'اگر آپ پچھلی سلائیڈ پر واپس جانا چاہتے ہیں تو "پچھلا" بٹن استعمال کریں. یہ آپ کو کورس میں پچھلے موضوع یا ماڈیول پر نیویگیٹ کرے گا.',
       dutch: 'Als je terug wilt naar de vorige dia, gebruik dan de knop "Vorige". Het zal je naar het vorige onderwerp of module navigeren.',
@@ -222,7 +222,7 @@ function cnrzIntroTourWithoutSeekbar(language) {
 	//Developed by: @nrzmalik
   var translations = {
     intro: {
-      english: 'Welcome to the course! This is the slide area where the course content will be displayed. Use the navigation buttons to move between slides.',
+      english: 'Welcome to the course! This is the slide area where the course content will be displayed. You can also click on each Icon to navigate across the course. Use the navigation buttons to move between slides.',
       arabic: 'مرحبًا بك في الدورة! هذه هي منطقة الشريحة حيث سيتم عرض محتوى الدورة. استخدم أزرار التنقل للتحرك بين الشرائح.',
       urdu: 'کورس میں خوش آمدید! یہاں سلائیڈ کا علاقہ ہے جہاں کورس کی مواد کی عرض ہوگی. اسلائیڈوں کے درمیان حرکت کرنے کے لئے نیویگیشن بٹن استعمال کریں.',
       dutch: 'Welkom bij de cursus! Dit is het schuifgebied waar de cursusinhoud wordt weergegeven. Gebruik de navigatieknoppen om tussen dia\'s te bewegen.',
@@ -242,7 +242,7 @@ function cnrzIntroTourWithoutSeekbar(language) {
       portuguese: 'Aqui você pode encontrar recursos úteis relacionados ao curso. Clique nos links para acessar materiais adicionais ou referências.'
     },
     menu: {
-      english: 'The course menu is located here. It provides an overview of the course structure and allows you to jump to specific chapter. You can also click on each Icon to navigate across the course.',
+      english: 'The course menu is located here. It provides an overview of the course structure and allows you to jump to specific chapter.',
       arabic: 'يقع قائمة الدورة هنا. يوفر نظرة عامة على هيكل الدورة ويتيح لك الانتقال إلى أقسام أو وحدات محددة.',
       urdu: 'کورس کی مینو یہاں موجود ہے. یہ کورس کی ساخت کا ایک جائزہ دیتی ہے اور آپ کو خاص حصوں یا ماڈیولز میں جانے کی اجازت دیتی ہے.',
       dutch: 'Het cursusmenu bevindt zich hier. Het biedt een overzicht van de cursusstructuur en stelt je in staat om naar specifieke secties of modules te springen.',
@@ -262,7 +262,7 @@ function cnrzIntroTourWithoutSeekbar(language) {
       portuguese: 'Esses controles permitem que você reproduza ou pause a reprodução dos slides. Você pode controlar o ritmo do conteúdo do curso com base em suas preferências.'
     },
     next: {
-      english: 'To move to the next slide, click the "Next" button. It will take you to the next topic or module in the course.',
+      english: 'To move to the next slide, click the "Next" button. It will take you to the next chapter in the course.',
       arabic: 'للانتقال إلى الشريحة التالية، انقر على زر "التالي". سوف ينقلك إلى الموضوع أو الوحدة التالية في الدورة.',
       urdu: 'اگلی سلائیڈ پر منتقل ہونے کے لئے "اگلے" بٹن پر کلک کریں. یہ آپ کو کورس میں اگلے موضوع یا ماڈیول پر لے جائے گا.',
       dutch: 'Klik op de knop "Volgende" om naar de volgende dia te gaan. Het brengt je naar het volgende onderwerp of module in de cursus.',
@@ -272,7 +272,7 @@ function cnrzIntroTourWithoutSeekbar(language) {
       portuguese: 'Para avançar para o próximo slide, clique no botão "Próximo". Ele o levará para o próximo tópico ou módulo no curso.'
     },
     prev: {
-      english: 'If you want to go back to the previous slide, use the "Previous" button. It will navigate you to the previous topic or module.',
+      english: 'If you want to go back to the previous slide, use the "Previous" button. It will navigate you to the previous chapter.',
       arabic: 'إذا كنت ترغب في العودة إلى الشريحة السابقة، استخدم زر "السابق". سيوجهك إلى الموضوع أو الوحدة السابقة.',
       urdu: 'اگر آپ پچھلی سلائیڈ پر واپس جانا چاہتے ہیں تو "پچھلا" بٹن استعمال کریں. یہ آپ کو کورس میں پچھلے موضوع یا ماڈیول پر نیویگیٹ کرے گا.',
       dutch: 'Als je terug wilt naar de vorige dia, gebruik dan de knop "Vorige". Het zal je naar het vorige onderwerp of module navigeren.',
