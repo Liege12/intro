@@ -26,7 +26,7 @@ function observeHelperLayer() {
 observeHelperLayer();
 
 
-function cnrzIntroTour(english) {
+function cnrzIntroTour(language) {
 	//Developed by: @nrzmalik
   var translations = {
     intro: {
