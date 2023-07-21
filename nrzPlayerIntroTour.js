@@ -30,7 +30,7 @@ function cnrzIntroTour(language) {
 	//Developed by: @nrzmalik
   var translations = {
     intro: {
-      english: 'Welcome to the course! This is the slide area where the course content will be displayed. You can also click on each Icon to navigate across the course. Use the navigation buttons to move between slides.',
+      english: 'Welcome to the course! This is the slide area where the course content will be displayed. You can also click on each icon to navigate across the course.',
       arabic: 'مرحبًا بك في الدورة! هذه هي منطقة الشريحة حيث سيتم عرض محتوى الدورة. استخدم أزرار التنقل للتحرك بين الشرائح.',
       urdu: 'کورس میں خوش آمدید! یہاں سلائیڈ کا علاقہ ہے جہاں کورس کی مواد کی عرض ہوگی. اسلائیڈوں کے درمیان حرکت کرنے کے لئے نیویگیشن بٹن استعمال کریں.',
       dutch: 'Welkom bij de cursus! Dit is het schuifgebied waar de cursusinhoud wordt weergegeven. Gebruik de navigatieknoppen om tussen dia\'s te bewegen.',
@@ -222,7 +222,7 @@ function cnrzIntroTourWithoutSeekbar(language) {
 	//Developed by: @nrzmalik
   var translations = {
     intro: {
-      english: 'Welcome to the course! This is the slide area where the course content will be displayed. You can also click on each Icon to navigate across the course. Use the navigation buttons to move between slides.',
+      english: 'Welcome to the course! This is the slide area where the course content will be displayed. You can also click on each icon to navigate across the course.',
       arabic: 'مرحبًا بك في الدورة! هذه هي منطقة الشريحة حيث سيتم عرض محتوى الدورة. استخدم أزرار التنقل للتحرك بين الشرائح.',
       urdu: 'کورس میں خوش آمدید! یہاں سلائیڈ کا علاقہ ہے جہاں کورس کی مواد کی عرض ہوگی. اسلائیڈوں کے درمیان حرکت کرنے کے لئے نیویگیشن بٹن استعمال کریں.',
       dutch: 'Welkom bij de cursus! Dit is het schuifgebied waar de cursusinhoud wordt weergegeven. Gebruik de navigatieknoppen om tussen dia\'s te bewegen.',
