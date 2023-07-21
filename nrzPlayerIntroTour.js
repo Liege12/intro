@@ -50,7 +50,7 @@ function cnrzIntroTour(language) {
       portuguese: 'Aqui você pode encontrar recursos úteis relacionados ao curso. Clique nos links para acessar materiais adicionais ou referências.'
     },
     menu: {
-      english: 'The course menu is located here. It provides an overview of the course structure and allows you to jump to specific sections or modules.',
+      english: 'The course menu is located here. It provides an overview of the course structure and allows you to jump to specific chapter. You can also click on each Icon to navigate across the course.',
       arabic: 'يقع قائمة الدورة هنا. يوفر نظرة عامة على هيكل الدورة ويتيح لك الانتقال إلى أقسام أو وحدات محددة.',
       urdu: 'کورس کی مینو یہاں موجود ہے. یہ کورس کی ساخت کا ایک جائزہ دیتی ہے اور آپ کو خاص حصوں یا ماڈیولز میں جانے کی اجازت دیتی ہے.',
       dutch: 'Het cursusmenu bevindt zich hier. Het biedt een overzicht van de cursusstructuur en stelt je in staat om naar specifieke secties of modules te springen.',
@@ -242,7 +242,7 @@ function cnrzIntroTourWithoutSeekbar(language) {
       portuguese: 'Aqui você pode encontrar recursos úteis relacionados ao curso. Clique nos links para acessar materiais adicionais ou referências.'
     },
     menu: {
-      english: 'The course menu is located here. It provides an overview of the course structure and allows you to jump to specific sections or modules.',
+      english: 'The course menu is located here. It provides an overview of the course structure and allows you to jump to specific chapter. You can also click on each Icon to navigate across the course.',
       arabic: 'يقع قائمة الدورة هنا. يوفر نظرة عامة على هيكل الدورة ويتيح لك الانتقال إلى أقسام أو وحدات محددة.',
       urdu: 'کورس کی مینو یہاں موجود ہے. یہ کورس کی ساخت کا ایک جائزہ دیتی ہے اور آپ کو خاص حصوں یا ماڈیولز میں جانے کی اجازت دیتی ہے.',
       dutch: 'Het cursusmenu bevindt zich hier. Het biedt een overzicht van de cursusstructuur en stelt je in staat om naar specifieke secties of modules te springen.',
