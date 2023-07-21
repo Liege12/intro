@@ -1,6 +1,5 @@
 //Developed by: @nrzmalik
 
-
 function updateHelperCSS() {
   var helperLayer = document.querySelector('.introjs-helperLayer');
   if (helperLayer) {
@@ -26,7 +25,9 @@ function observeHelperLayer() {
 }
 observeHelperLayer();
 
-function nrzIntroTour(language) {
+
+function cnrzIntroTour(english) {
+	//Developed by: @nrzmalik
   var translations = {
     intro: {
       english: 'Welcome to the course! This is the slide area where the course content will be displayed. Use the navigation buttons to move between slides.',
@@ -87,52 +88,138 @@ function nrzIntroTour(language) {
       french: 'Si vous souhaitez revenir à la diapositive précédente, utilisez le bouton "Précédent". Il vous ramènera au sujet ou module précédent.',
       mandarin: '如果您想返回上一张幻灯片，请使用“上一页”按钮。它将使您导航到前一个主题或模块。',
       portuguese: 'Se você deseja voltar para o slide anterior, use o botão "Anterior". Ele irá levá-lo de volta ao tópico ou módulo anterior.'
+    },
+	captions: {
+      english: 'This button allows you to enable or disable captions for the course content. Click on it to toggle captions on or off.',
+      arabic: 'هذا الزر يسمح لك بتمكين أو تعطيل الشرح لمحتوى الدورة. انقر عليه لتبديل الشرح تشغيل أو إيقاف.',
+      urdu: 'اس بٹن کی مدد سے آپ کورس کی مواد کے لئے شرح کو فعال یا غیرفعال کرسکتے ہیں. اس پر کلک کریں تاکہ شرح کو آن یا آف کریں.',
+      dutch: 'Deze knop stelt u in staat om bijschriften voor de cursusinhoud in of uit te schakelen. Klik erop om bijschriften aan of uit te zetten.',
+      spanish: 'Este botón te permite habilitar o deshabilitar los subtítulos para el contenido del curso. Haz clic en él para activar o desactivar los subtítulos.',
+      french: 'Ce bouton vous permet d\'activer ou de désactiver les sous-titres pour le contenu du cours. Cliquez dessus pour activer ou désactiver les sous-titres.',
+      mandarin: '此按钮可让您启用或禁用课程内容的字幕。单击它以切换字幕的开启或关闭状态。',
+      portuguese: 'Este botão permite que você habilite ou desabilite legendas para o conteúdo do curso. Clique nele para ativar ou desativar as legendas.'
+    },
+    titles: {
+      english: {
+        slide: 'Slide',
+        resources: 'Helpful Resources',
+        menu: 'Course Menu',
+        playback: 'Slide Playback Control',
+        next: 'Next Slide Button',
+        prev: 'Prev Slide Button',
+        captions: 'Captions'
+      },
+      arabic: {
+        slide: 'الشريحة',
+        resources: 'موارد مفيدة',
+        menu: 'قائمة الدورة',
+        playback: 'تحكم تشغيل الشرائح',
+        next: 'زر التالي',
+        prev: 'زر السابق',
+        captions: 'الشرح'
+      },
+      urdu: {
+        slide: 'سلائیڈ',
+        resources: 'مددگار وسائل',
+        menu: 'کورس مینو',
+        playback: 'اسلائیڈ پلے بیک کنٹرول',
+        next: 'اگلے سلائیڈ بٹن',
+        prev: 'پچھلے سلائیڈ بٹن',
+        captions: 'شرح'
+      },
+      dutch: {
+        slide: 'Schuif',
+        resources: 'Nuttige bronnen',
+        menu: 'Cursusmenu',
+        playback: 'Afspelen van diavoorstelling bedienen',
+        next: 'Volgende dia knop',
+        prev: 'Vorige dia knop',
+        captions: 'Bijschriften'
+      },
+      spanish: {
+        slide: 'Diapositiva',
+        resources: 'Recursos útiles',
+        menu: 'Menú del curso',
+        playback: 'Control de reproducción de diapositivas',
+        next: 'Botón de siguiente diapositiva',
+        prev: 'Botón de diapositiva anterior',
+        captions: 'Subtítulos'
+      },
+      french: {
+        slide: 'Diapositive',
+        resources: 'Ressources utiles',
+        menu: 'Menu du cours',
+        playback: 'Contrôle de lecture des diapositives',
+        next: 'Bouton de diapositive suivante',
+        prev: 'Bouton de diapositive précédente',
+        captions: 'Sous-titres'
+      },
+      mandarin: {
+        slide: '幻灯片',
+        resources: '有用资源',
+        menu: '课程菜单',
+        playback: '幻灯片播放控制',
+        next: '下一张幻灯片按钮',
+        prev: '上一张幻灯片按钮',
+        captions: '字幕'
+      },
+      portuguese: {
+        slide: 'Slide',
+        resources: 'Recursos úteis',
+        menu: 'Menu do curso',
+        playback: 'Controle de reprodução de slides',
+        next: 'Botão de próximo slide',
+        prev: 'Botão de slide anterior',
+        captions: 'Legendas'
+      }
     }
   }
+
   introJs().setOptions({
     steps: [
       {
         element: '.acc-blocker',
         intro: translations['intro'][language],
-        title: 'Slide',
+        title: translations['titles'][language]['slide'],
       },
       {
         element: '#links-right',
         intro: translations['resources'][language],
-        title: 'Helpful Resources',
+        title: translations['titles'][language]['resources'],
       },
       {
         element: '#outline-content',
         intro: translations['menu'][language],
-        title: 'Course Menu',
+        title: translations['titles'][language]['menu'],
       },
       {
         element: '#playback-controls',
         intro: translations['playback'][language],
-        title: 'Slide Playback Control',
+        title: translations['titles'][language]['playback'],
+      },
+      {
+        element: '#captions',
+        intro: translations['captions'][language],
+        title: translations['titles'][language]['captions'],
       },
 	  {
         element: '#prev',
         intro: translations['prev'][language],
-        title: 'Prev Slide Button',
+        title: translations['titles'][language]['prev'],
       },
       {
         element: '#next',
         intro: translations['next'][language],
-        title: 'Next Slide Button',
+        title: translations['titles'][language]['next'],
       }
       
     ],
-	 onafterchange: function () {
-      updateHelperCSS();
-    }
   }).start();
-  
   observeHelperLayer();
-  
 }
-
-function nrzIntroTourWithoutSeekbar(language) {
+/// Without SeekBar
+function cnrzIntroTourWithoutSeekbar(language) {
+	//Developed by: @nrzmalik
   var translations = {
     intro: {
       english: 'Welcome to the course! This is the slide area where the course content will be displayed. Use the navigation buttons to move between slides.',
@@ -193,42 +280,128 @@ function nrzIntroTourWithoutSeekbar(language) {
       french: 'Si vous souhaitez revenir à la diapositive précédente, utilisez le bouton "Précédent". Il vous ramènera au sujet ou module précédent.',
       mandarin: '如果您想返回上一张幻灯片，请使用“上一页”按钮。它将使您导航到前一个主题或模块。',
       portuguese: 'Se você deseja voltar para o slide anterior, use o botão "Anterior". Ele irá levá-lo de volta ao tópico ou módulo anterior.'
+    },
+	captions: {
+      english: 'This button allows you to enable or disable captions for the course content. Click on it to toggle captions on or off.',
+      arabic: 'هذا الزر يسمح لك بتمكين أو تعطيل الشرح لمحتوى الدورة. انقر عليه لتبديل الشرح تشغيل أو إيقاف.',
+      urdu: 'اس بٹن کی مدد سے آپ کورس کی مواد کے لئے شرح کو فعال یا غیرفعال کرسکتے ہیں. اس پر کلک کریں تاکہ شرح کو آن یا آف کریں.',
+      dutch: 'Deze knop stelt u in staat om bijschriften voor de cursusinhoud in of uit te schakelen. Klik erop om bijschriften aan of uit te zetten.',
+      spanish: 'Este botón te permite habilitar o deshabilitar los subtítulos para el contenido del curso. Haz clic en él para activar o desactivar los subtítulos.',
+      french: 'Ce bouton vous permet d\'activer ou de désactiver les sous-titres pour le contenu du cours. Cliquez dessus pour activer ou désactiver les sous-titres.',
+      mandarin: '此按钮可让您启用或禁用课程内容的字幕。单击它以切换字幕的开启或关闭状态。',
+      portuguese: 'Este botão permite que você habilite ou desabilite legendas para o conteúdo do curso. Clique nele para ativar ou desativar as legendas.'
+    },
+    titles: {
+      english: {
+        slide: 'Slide',
+        resources: 'Helpful Resources',
+        menu: 'Course Menu',
+        playback: 'Slide Playback Control',
+        next: 'Next Slide Button',
+        prev: 'Prev Slide Button',
+        captions: 'Captions'
+      },
+      arabic: {
+        slide: 'الشريحة',
+        resources: 'موارد مفيدة',
+        menu: 'قائمة الدورة',
+        playback: 'تحكم تشغيل الشرائح',
+        next: 'زر التالي',
+        prev: 'زر السابق',
+        captions: 'الشرح'
+      },
+      urdu: {
+        slide: 'سلائیڈ',
+        resources: 'مددگار وسائل',
+        menu: 'کورس مینو',
+        playback: 'اسلائیڈ پلے بیک کنٹرول',
+        next: 'اگلے سلائیڈ بٹن',
+        prev: 'پچھلے سلائیڈ بٹن',
+        captions: 'شرح'
+      },
+      dutch: {
+        slide: 'Schuif',
+        resources: 'Nuttige bronnen',
+        menu: 'Cursusmenu',
+        playback: 'Afspelen van diavoorstelling bedienen',
+        next: 'Volgende dia knop',
+        prev: 'Vorige dia knop',
+        captions: 'Bijschriften'
+      },
+      spanish: {
+        slide: 'Diapositiva',
+        resources: 'Recursos útiles',
+        menu: 'Menú del curso',
+        playback: 'Control de reproducción de diapositivas',
+        next: 'Botón de siguiente diapositiva',
+        prev: 'Botón de diapositiva anterior',
+        captions: 'Subtítulos'
+      },
+      french: {
+        slide: 'Diapositive',
+        resources: 'Ressources utiles',
+        menu: 'Menu du cours',
+        playback: 'Contrôle de lecture des diapositives',
+        next: 'Bouton de diapositive suivante',
+        prev: 'Bouton de diapositive précédente',
+        captions: 'Sous-titres'
+      },
+      mandarin: {
+        slide: '幻灯片',
+        resources: '有用资源',
+        menu: '课程菜单',
+        playback: '幻灯片播放控制',
+        next: '下一张幻灯片按钮',
+        prev: '上一张幻灯片按钮',
+        captions: '字幕'
+      },
+      portuguese: {
+        slide: 'Slide',
+        resources: 'Recursos úteis',
+        menu: 'Menu do curso',
+        playback: 'Controle de reprodução de slides',
+        next: 'Botão de próximo slide',
+        prev: 'Botão de slide anterior',
+        captions: 'Legendas'
+      }
     }
   }
+
   introJs().setOptions({
     steps: [
       {
         element: '.acc-blocker',
         intro: translations['intro'][language],
-        title: 'Slide',
+        title: translations['titles'][language]['slide'],
       },
       {
         element: '#links-right',
         intro: translations['resources'][language],
-        title: 'Helpful Resources',
+        title: translations['titles'][language]['resources'],
       },
       {
         element: '#outline-content',
         intro: translations['menu'][language],
-        title: 'Course Menu',
+        title: translations['titles'][language]['menu'],
+      },
+      {
+        element: '#captions',
+        intro: translations['captions'][language],
+        title: translations['titles'][language]['captions'],
       },
 	  {
         element: '#prev',
         intro: translations['prev'][language],
-        title: 'Prev Slide Button',
+        title: translations['titles'][language]['prev'],
       },
       {
         element: '#next',
         intro: translations['next'][language],
-        title: 'Next Slide Button',
+        title: translations['titles'][language]['next'],
       }
       
     ],
-	onafterchange: function () {
-      updateHelperCSS();
-    }
   }).start();
-  
   observeHelperLayer();
 }
 //# sourceMappingURL=https://cdn.jsdelivr.net/gh/nrzmalik/IntroTourByNrz/nrzIntroTourMutilLang.js
