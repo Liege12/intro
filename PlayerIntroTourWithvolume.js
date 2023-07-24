@@ -60,7 +60,7 @@ function clpIntroTour(language) {
       portuguese: 'O menu do curso está localizado aqui. Ele fornece uma visão geral da estrutura do curso e permite que você salte para seções ou módulos específicos.'
     },
     volume: {
-      english: 'By clicking on these icon, you can increase or decrease the volume according to your preferences.'.',
+      english: 'By clicking on these icon, you can increase or decrease the volume according to your preferences.',
       arabic: 'تتيح لك هذه المراقبات تشغيل أو إيقاف تشغيل تشغيل الشرائح. يمكنك التحكم في وتيرة محتوى الدورة بناءً على تفضيلاتك.',
       urdu: 'یہ کنٹرولز آپ کو اسلائیڈ پلے بیک کو چلانے یا روکنے کی اجازت دیتے ہیں. آپ اپنی ترجیحات کے مطابق کورس مواد کی رفتار کو کنٹرول کرسکتے ہیں.',
       dutch: 'Met deze bedieningselementen kun je de diavoorstelling afspelen of pauzeren. Je kunt de snelheid van de cursusinhoud naar wens regelen.',
@@ -70,7 +70,7 @@ function clpIntroTour(language) {
       portuguese: 'Esses controles permitem que você reproduza ou pause a reprodução dos slides. Você pode controlar o ritmo do conteúdo do curso com base em suas preferências.'
     },
     next: {
-      english: 'To move to the next slide, click the "Next" button. It will take you to the next chapter in the course.',
+      english: 'To move to the next slide, click the "Next" button.',
       arabic: 'للانتقال إلى الشريحة التالية، انقر على زر "التالي". سوف ينقلك إلى الموضوع أو الوحدة التالية في الدورة.',
       urdu: 'اگلی سلائیڈ پر منتقل ہونے کے لئے "اگلے" بٹن پر کلک کریں. یہ آپ کو کورس میں اگلے موضوع یا ماڈیول پر لے جائے گا.',
       dutch: 'Klik op de knop "Volgende" om naar de volgende dia te gaan. Het brengt je naar het volgende onderwerp of module in de cursus.',
@@ -80,7 +80,7 @@ function clpIntroTour(language) {
       portuguese: 'Para avançar para o próximo slide, clique no botão "Próximo". Ele o levará para o próximo tópico ou módulo no curso.'
     },
     prev: {
-      english: 'If you want to go back to the previous slide, use the "Previous" button. It will navigate you to the previous chapter.',
+      english: 'If you want to go back to the previous slide, use the "Previous" button.',
       arabic: 'إذا كنت ترغب في العودة إلى الشريحة السابقة، استخدم زر "السابق". سيوجهك إلى الموضوع أو الوحدة السابقة.',
       urdu: 'اگر آپ پچھلی سلائیڈ پر واپس جانا چاہتے ہیں تو "پچھلا" بٹن استعمال کریں. یہ آپ کو کورس میں پچھلے موضوع یا ماڈیول پر نیویگیٹ کرے گا.',
       dutch: 'Als je terug wilt naar de vorige dia, gebruik dan de knop "Vorige". Het zal je naar het vorige onderwerp of module navigeren.',
@@ -222,7 +222,7 @@ function clpIntroTourWithoutSeekbar(language) {
 	//Developed by: @nrzmalik
   var translations = {
     intro: {
-      english: 'Welcome to the course! This is the slide area where the course content will be displayed. You can also click on each icon to navigate across the course.',
+      english: 'Welcome to the course! This is the slide area where the course content will be displayed. You can click on each icon to navigate across the course.',
       arabic: 'مرحبًا بك في الدورة! هذه هي منطقة الشريحة حيث سيتم عرض محتوى الدورة. استخدم أزرار التنقل للتحرك بين الشرائح.',
       urdu: 'کورس میں خوش آمدید! یہاں سلائیڈ کا علاقہ ہے جہاں کورس کی مواد کی عرض ہوگی. اسلائیڈوں کے درمیان حرکت کرنے کے لئے نیویگیشن بٹن استعمال کریں.',
       dutch: 'Welkom bij de cursus! Dit is het schuifgebied waar de cursusinhoud wordt weergegeven. Gebruik de navigatieknoppen om tussen dia\'s te bewegen.',
@@ -262,7 +262,7 @@ function clpIntroTourWithoutSeekbar(language) {
       portuguese: 'Esses controles permitem que você reproduza ou pause a reprodução dos slides. Você pode controlar o ritmo do conteúdo do curso com base em suas preferências.'
     },
     next: {
-      english: 'To move to the next slide, click the "Next" button. It will take you to the next chapter in the course.',
+      english: 'To move to the next slide, click the "Next" button.',
       arabic: 'للانتقال إلى الشريحة التالية، انقر على زر "التالي". سوف ينقلك إلى الموضوع أو الوحدة التالية في الدورة.',
       urdu: 'اگلی سلائیڈ پر منتقل ہونے کے لئے "اگلے" بٹن پر کلک کریں. یہ آپ کو کورس میں اگلے موضوع یا ماڈیول پر لے جائے گا.',
       dutch: 'Klik op de knop "Volgende" om naar de volgende dia te gaan. Het brengt je naar het volgende onderwerp of module in de cursus.',
@@ -272,7 +272,7 @@ function clpIntroTourWithoutSeekbar(language) {
       portuguese: 'Para avançar para o próximo slide, clique no botão "Próximo". Ele o levará para o próximo tópico ou módulo no curso.'
     },
     prev: {
-      english: 'If you want to go back to the previous slide, use the "Previous" button. It will navigate you to the previous chapter.',
+      english: 'If you want to go back to the previous slide, use the "Previous" button.',
       arabic: 'إذا كنت ترغب في العودة إلى الشريحة السابقة، استخدم زر "السابق". سيوجهك إلى الموضوع أو الوحدة السابقة.',
       urdu: 'اگر آپ پچھلی سلائیڈ پر واپس جانا چاہتے ہیں تو "پچھلا" بٹن استعمال کریں. یہ آپ کو کورس میں پچھلے موضوع یا ماڈیول پر نیویگیٹ کرے گا.',
       dutch: 'Als je terug wilt naar de vorige dia, gebruik dan de knop "Vorige". Het zal je naar het vorige onderwerp of module navigeren.',
