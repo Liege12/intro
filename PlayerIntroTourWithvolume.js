@@ -59,7 +59,7 @@ function clpIntroTour(language) {
       mandarin: '课程菜单位于此处。它提供了课程结构的概述，并允许您跳转到特定的部分或模块。',
       portuguese: 'O menu do curso está localizado aqui. Ele fornece uma visão geral da estrutura do curso e permite que você salte para seções ou módulos específicos.'
     },
-    volume: {
+    	volume: {
       english: 'By clicking on these icon, you can increase or decrease the volume according to your preferences.',
       arabic: 'تتيح لك هذه المراقبات تشغيل أو إيقاف تشغيل تشغيل الشرائح. يمكنك التحكم في وتيرة محتوى الدورة بناءً على تفضيلاتك.',
       urdu: 'یہ کنٹرولز آپ کو اسلائیڈ پلے بیک کو چلانے یا روکنے کی اجازت دیتے ہیں. آپ اپنی ترجیحات کے مطابق کورس مواد کی رفتار کو کنٹرول کرسکتے ہیں.',
@@ -113,7 +113,7 @@ function clpIntroTour(language) {
         slide: 'الشريحة',
         resources: 'موارد مفيدة',
         menu: 'قائمة الدورة',
-        playback: 'تحكم تشغيل الشرائح',
+        volume: 'تحكم تشغيل الشرائح',
         next: 'زر التالي',
         prev: 'زر السابق',
         captions: 'الشرح'
@@ -122,7 +122,7 @@ function clpIntroTour(language) {
         slide: 'سلائیڈ',
         resources: 'مددگار وسائل',
         menu: 'کورس مینو',
-        playback: 'اسلائیڈ پلے بیک کنٹرول',
+        volume: 'اسلائیڈ پلے بیک کنٹرول',
         next: 'اگلے سلائیڈ بٹن',
         prev: 'پچھلے سلائیڈ بٹن',
         captions: 'شرح'
@@ -131,7 +131,7 @@ function clpIntroTour(language) {
         slide: 'Schuif',
         resources: 'Nuttige bronnen',
         menu: 'Cursusmenu',
-        playback: 'Afspelen van diavoorstelling bedienen',
+        volume: 'Afspelen van diavoorstelling bedienen',
         next: 'Volgende dia knop',
         prev: 'Vorige dia knop',
         captions: 'Bijschriften'
@@ -140,7 +140,7 @@ function clpIntroTour(language) {
         slide: 'Diapositiva',
         resources: 'Recursos útiles',
         menu: 'Menú del curso',
-        playback: 'Control de reproducción de diapositivas',
+        volume: 'Control de reproducción de diapositivas',
         next: 'Botón de siguiente diapositiva',
         prev: 'Botón de diapositiva anterior',
         captions: 'Subtítulos'
@@ -149,7 +149,7 @@ function clpIntroTour(language) {
         slide: 'Diapositive',
         resources: 'Ressources utiles',
         menu: 'Menu du cours',
-        playback: 'Contrôle de lecture des diapositives',
+        volume: 'Contrôle de lecture des diapositives',
         next: 'Bouton de diapositive suivante',
         prev: 'Bouton de diapositive précédente',
         captions: 'Sous-titres'
@@ -158,7 +158,7 @@ function clpIntroTour(language) {
         slide: '幻灯片',
         resources: '有用资源',
         menu: '课程菜单',
-        playback: '幻灯片播放控制',
+        volume: '幻灯片播放控制',
         next: '下一张幻灯片按钮',
         prev: '上一张幻灯片按钮',
         captions: '字幕'
@@ -167,7 +167,7 @@ function clpIntroTour(language) {
         slide: 'Slide',
         resources: 'Recursos úteis',
         menu: 'Menu do curso',
-        playback: 'Controle de reprodução de slides',
+        volume: 'Controle de reprodução de slides',
         next: 'Botão de próximo slide',
         prev: 'Botão de slide anterior',
         captions: 'Legendas'
@@ -194,8 +194,8 @@ function clpIntroTour(language) {
       },
       {
         element: '#volume-controls',
-        intro: translations['playback'][language],
-        title: translations['titles'][language]['playback'],
+        intro: translations['volume'][language],
+        title: translations['titles'][language]['volume'],
       },
       {
         element: '#captions',
@@ -305,7 +305,7 @@ function clpIntroTourWithoutSeekbar(language) {
         slide: 'الشريحة',
         resources: 'موارد مفيدة',
         menu: 'قائمة الدورة',
-        playback: 'تحكم تشغيل الشرائح',
+        volume: 'تحكم تشغيل الشرائح',
         next: 'زر التالي',
         prev: 'زر السابق',
         captions: 'الشرح'
@@ -314,7 +314,7 @@ function clpIntroTourWithoutSeekbar(language) {
         slide: 'سلائیڈ',
         resources: 'مددگار وسائل',
         menu: 'کورس مینو',
-        playback: 'اسلائیڈ پلے بیک کنٹرول',
+        volume: 'اسلائیڈ پلے بیک کنٹرول',
         next: 'اگلے سلائیڈ بٹن',
         prev: 'پچھلے سلائیڈ بٹن',
         captions: 'شرح'
@@ -323,7 +323,7 @@ function clpIntroTourWithoutSeekbar(language) {
         slide: 'Schuif',
         resources: 'Nuttige bronnen',
         menu: 'Cursusmenu',
-        playback: 'Afspelen van diavoorstelling bedienen',
+        volume: 'Afspelen van diavoorstelling bedienen',
         next: 'Volgende dia knop',
         prev: 'Vorige dia knop',
         captions: 'Bijschriften'
@@ -332,7 +332,7 @@ function clpIntroTourWithoutSeekbar(language) {
         slide: 'Diapositiva',
         resources: 'Recursos útiles',
         menu: 'Menú del curso',
-        playback: 'Control de reproducción de diapositivas',
+        volume: 'Control de reproducción de diapositivas',
         next: 'Botón de siguiente diapositiva',
         prev: 'Botón de diapositiva anterior',
         captions: 'Subtítulos'
@@ -341,7 +341,7 @@ function clpIntroTourWithoutSeekbar(language) {
         slide: 'Diapositive',
         resources: 'Ressources utiles',
         menu: 'Menu du cours',
-        playback: 'Contrôle de lecture des diapositives',
+        volume: 'Contrôle de lecture des diapositives',
         next: 'Bouton de diapositive suivante',
         prev: 'Bouton de diapositive précédente',
         captions: 'Sous-titres'
@@ -350,7 +350,7 @@ function clpIntroTourWithoutSeekbar(language) {
         slide: '幻灯片',
         resources: '有用资源',
         menu: '课程菜单',
-        playback: '幻灯片播放控制',
+        volume: '幻灯片播放控制',
         next: '下一张幻灯片按钮',
         prev: '上一张幻灯片按钮',
         captions: '字幕'
@@ -359,7 +359,7 @@ function clpIntroTourWithoutSeekbar(language) {
         slide: 'Slide',
         resources: 'Recursos úteis',
         menu: 'Menu do curso',
-        playback: 'Controle de reprodução de slides',
+        volume: 'Controle de reprodução de slides',
         next: 'Botão de próximo slide',
         prev: 'Botão de slide anterior',
         captions: 'Legendas'
@@ -383,6 +383,11 @@ function clpIntroTourWithoutSeekbar(language) {
         element: '#outline-content',
         intro: translations['menu'][language],
         title: translations['titles'][language]['menu'],
+      },
+	    {
+        element: '#volume-control',
+        intro: translations['volume'][language],
+        title: translations['titles'][language]['volume'],
       },
       {
         element: '#captions',
