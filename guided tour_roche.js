@@ -26,7 +26,7 @@ function observeHelperLayer() {
 observeHelperLayer();
 
 
-function clrpIntroTour(language) {
+function clrpiIntroTour(language) {
 	//Developed by: @nrzmalik
   var translations = {
     intro: {
@@ -40,7 +40,7 @@ function clrpIntroTour(language) {
       portuguese: 'Bem-vindo ao curso! Esta é a área do slide onde o conteúdo do curso será exibido. Use os botões de navegação para se mover entre os slides.'
     },
     resources: {
-      english: 'Here you'll find "My Personal Journey" document, where you can make notes on your progress. In addition, you will find useful resources related to the course. Click on the links to access additional materials.',
+      english: 'Here you will find "My Personal Journey" document, where you can make notes on your progress. In addition, you will find useful resources related to the course. Click on the links to access additional materials.',
       arabic: 'هنا يمكنك العثور على موارد مفيدة تتعلق بالدورة. انقر على الروابط للوصول إلى مواد إضافية أو مراجع.',
       urdu: 'یہاں آپ کورس سے متعلق مددگار وسائل تلاش کر سکتے ہیں. اضافی مواد یا حوالے تک رسائی حاصل کرنے کے لئے لنکس پر کلک کریں.',
       dutch: 'Hier vind je nuttige bronnen gerelateerd aan de cursus. Klik op de links om extra materiaal of referenties te openen.',
@@ -60,7 +60,7 @@ function clrpIntroTour(language) {
       portuguese: 'O menu do curso está localizado aqui. Ele fornece uma visão geral da estrutura do curso e permite que você salte para seções ou módulos específicos.'
     },
     next: {
-      english: 'To move to the next slide, click the "Next" button. It will take you to the next chapter in the course.',
+      english: 'To move to the next slide, click the "Next" button.',
       arabic: 'للانتقال إلى الشريحة التالية، انقر على زر "التالي". سوف ينقلك إلى الموضوع أو الوحدة التالية في الدورة.',
       urdu: 'اگلی سلائیڈ پر منتقل ہونے کے لئے "اگلے" بٹن پر کلک کریں. یہ آپ کو کورس میں اگلے موضوع یا ماڈیول پر لے جائے گا.',
       dutch: 'Klik op de knop "Volgende" om naar de volgende dia te gaan. Het brengt je naar het volgende onderwerp of module in de cursus.',
@@ -70,7 +70,7 @@ function clrpIntroTour(language) {
       portuguese: 'Para avançar para o próximo slide, clique no botão "Próximo". Ele o levará para o próximo tópico ou módulo no curso.'
     },
     prev: {
-      english: 'If you want to go back to the previous slide, use the "Previous" button. It will navigate you to the previous chapter.',
+      english: 'If you want to go back to the previous slide, use the "Previous" button.',
       arabic: 'إذا كنت ترغب في العودة إلى الشريحة السابقة، استخدم زر "السابق". سيوجهك إلى الموضوع أو الوحدة السابقة.',
       urdu: 'اگر آپ پچھلی سلائیڈ پر واپس جانا چاہتے ہیں تو "پچھلا" بٹن استعمال کریں. یہ آپ کو کورس میں پچھلے موضوع یا ماڈیول پر نیویگیٹ کرے گا.',
       dutch: 'Als je terug wilt naar de vorige dia, gebruik dan de knop "Vorige". Het zal je naar het vorige onderwerp of module navigeren.',
@@ -80,7 +80,7 @@ function clrpIntroTour(language) {
       portuguese: 'Se você deseja voltar para o slide anterior, use o botão "Anterior". Ele irá levá-lo de volta ao tópico ou módulo anterior.'
     },
   volume: {
-      english: 'By clicking on this button, each slide will start with audio in the background where you can increase or decrease the volume according to your preferences.',
+      english: 'Each slide will start with audio in the background where you can increase/decrease or turn off the volume according to your preferences.',
       arabic: 'هذا الزر يسمح لك بتمكين أو تعطيل الشرح لمحتوى الدورة. انقر عليه لتبديل الشرح تشغيل أو إيقاف.',
       urdu: 'اس بٹن کی مدد سے آپ کورس کی مواد کے لئے شرح کو فعال یا غیرفعال کرسکتے ہیں. اس پر کلک کریں تاکہ شرح کو آن یا آف کریں.',
       dutch: 'Deze knop stelt u in staat om bijschriften voor de cursusinhoud in of uit te schakelen. Klik erop om bijschriften aan of uit te zetten.',
@@ -204,7 +204,7 @@ function clrpIntroTour(language) {
   observeHelperLayer();
 }
 /// Without SeekBar
-function clrpIntroTourWithoutSeekbar(language) {
+function clrpiIntroTourWithoutSeekbar(language) {
 	//Developed by: @nrzmalik
   var translations = {
     intro: {
@@ -218,7 +218,7 @@ function clrpIntroTourWithoutSeekbar(language) {
       portuguese: 'Bem-vindo ao curso! Esta é a área do slide onde o conteúdo do curso será exibido. Use os botões de navegação para se mover entre os slides.'
     },
     resources: {
-      english: 'Here you'll find "My Personal Journey" document, where you can make notes on your progress. In addition, you will find useful resources related to the course. Click on the links to access additional materials.',
+      english: 'Here you will find "My Personal Journey" document, where you can make notes on your progress. In addition, you will find useful resources related to the course. Click on the links to access additional materials.',
       arabic: 'هنا يمكنك العثور على موارد مفيدة تتعلق بالدورة. انقر على الروابط للوصول إلى مواد إضافية أو مراجع.',
       urdu: 'یہاں آپ کورس سے متعلق مددگار وسائل تلاش کر سکتے ہیں. اضافی مواد یا حوالے تک رسائی حاصل کرنے کے لئے لنکس پر کلک کریں.',
       dutch: 'Hier vind je nuttige bronnen gerelateerd aan de cursus. Klik op de links om extra materiaal of referenties te openen.',
@@ -238,7 +238,7 @@ function clrpIntroTourWithoutSeekbar(language) {
       portuguese: 'O menu do curso está localizado aqui. Ele fornece uma visão geral da estrutura do curso e permite que você salte para seções ou módulos específicos.'
     },
     next: {
-      english: 'To move to the next slide, click the "Next" button. It will take you to the next chapter in the course.',
+      english: 'To move to the next slide, click the "Next" button.',
       arabic: 'للانتقال إلى الشريحة التالية، انقر على زر "التالي". سوف ينقلك إلى الموضوع أو الوحدة التالية في الدورة.',
       urdu: 'اگلی سلائیڈ پر منتقل ہونے کے لئے "اگلے" بٹن پر کلک کریں. یہ آپ کو کورس میں اگلے موضوع یا ماڈیول پر لے جائے گا.',
       dutch: 'Klik op de knop "Volgende" om naar de volgende dia te gaan. Het brengt je naar het volgende onderwerp of module in de cursus.',
@@ -248,7 +248,7 @@ function clrpIntroTourWithoutSeekbar(language) {
       portuguese: 'Para avançar para o próximo slide, clique no botão "Próximo". Ele o levará para o próximo tópico ou módulo no curso.'
     },
     prev: {
-      english: 'If you want to go back to the previous slide, use the "Previous" button. It will navigate you to the previous chapter.',
+      english: 'If you want to go back to the previous slide, use the "Previous" button.',
       arabic: 'إذا كنت ترغب في العودة إلى الشريحة السابقة، استخدم زر "السابق". سيوجهك إلى الموضوع أو الوحدة السابقة.',
       urdu: 'اگر آپ پچھلی سلائیڈ پر واپس جانا چاہتے ہیں تو "پچھلا" بٹن استعمال کریں. یہ آپ کو کورس میں پچھلے موضوع یا ماڈیول پر نیویگیٹ کرے گا.',
       dutch: 'Als je terug wilt naar de vorige dia, gebruik dan de knop "Vorige". Het zal je naar het vorige onderwerp of module navigeren.',
@@ -258,7 +258,7 @@ function clrpIntroTourWithoutSeekbar(language) {
       portuguese: 'Se você deseja voltar para o slide anterior, use o botão "Anterior". Ele irá levá-lo de volta ao tópico ou módulo anterior.'
     },
 	 volume: {
-      english: 'By clicking on this button, you can increase or decrease the volume according to your preferences.',
+      english: 'Each slide will start with audio in the background where you can increase/decrease or turn off the volume according to your preferences.',
       arabic: 'هذا الزر يسمح لك بتمكين أو تعطيل الشرح لمحتوى الدورة. انقر عليه لتبديل الشرح تشغيل أو إيقاف.',
       urdu: 'اس بٹن کی مدد سے آپ کورس کی مواد کے لئے شرح کو فعال یا غیرفعال کرسکتے ہیں. اس پر کلک کریں تاکہ شرح کو آن یا آف کریں.',
       dutch: 'Deze knop stelt u in staat om bijschriften voor de cursusinhoud in of uit te schakelen. Klik erop om bijschriften aan of uit te zetten.',
@@ -364,7 +364,7 @@ function clrpIntroTourWithoutSeekbar(language) {
         intro: translations['volume'][language],
         title: translations['titles'][language]['volume'],
       },
-	  {
+      {
         element: '#prev',
         intro: translations['prev'][language],
         title: translations['titles'][language]['prev'],
