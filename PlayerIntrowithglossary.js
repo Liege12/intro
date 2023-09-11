@@ -113,12 +113,12 @@ function pimIntroTour(language) {
       english: {
         slide: 'Slide',
         resources: 'Helpful Resources',
-        menu: 'Course Menu',
+        menu: 'Course Menu',    
         next: 'Next Slide Button',
         prev: 'Prev Slide Button',
         captions: 'Captions',
         volume: 'Volume',
-        glossary: 'Glossary'
+	glossary: 'Glossary'  
       },
       arabic: {
         slide: 'الشريحة',
@@ -206,6 +206,11 @@ function pimIntroTour(language) {
         title: translations['titles'][language]['menu'],
       },
       {
+        element: '#glossary',
+        intro: translations['glossary'][language],
+        title: translations['titles'][language]['glossary'],
+      },
+      {
         element: '#volume',
         intro: translations['volume'][language],
         title: translations['titles'][language]['volume'],
@@ -224,13 +229,9 @@ function pimIntroTour(language) {
         element: '#next',
         intro: translations['next'][language],
         title: translations['titles'][language]['next'],
-      },
-       {
-        element: '#glossary',
-        intro: translations['glossary'][language],
-        title: translations['titles'][language]['glossary']
-      }
-    ],
+       }
+	    
+       ],
   }).start();
   observeHelperLayer();
 }
@@ -414,6 +415,11 @@ function pimIntroTourWithoutSeekbar(language) {
         title: translations['titles'][language]['menu'],
       },
       {
+        element: '#glossary',
+        intro: translations['glossary'][language],
+        title: translations['titles'][language]['glossary'],
+      },
+      {
         element: '#volume',
         intro: translations['volume'][language],
         title: translations['titles'][language]['volume'],
@@ -432,11 +438,8 @@ function pimIntroTourWithoutSeekbar(language) {
         element: '#next',
         intro: translations['next'][language],
         title: translations['titles'][language]['next'],
-      },
-      {
-        element: '#glossary',
-        intro: translations['glossary'][language],
-        title: translations['titles'][language]['glossary']
+      }
+     
     ],
   }).start();
   observeHelperLayer();
