@@ -235,7 +235,7 @@ function pimIntroTour(language) {
   observeHelperLayer();
 }
 /// Without SeekBar
-function clrpimIntroTourWithoutSeekbar(language) {
+function pimIntroTourWithoutSeekbar(language) {
 	//Developed by: @nrzmalik
   var translations = {
     intro: {
