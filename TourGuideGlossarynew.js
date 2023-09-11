@@ -100,7 +100,7 @@ function pimIntroTour(language) {
       portuguese: 'Este botão permite que você habilite ou desabilite legendas para o conteúdo do curso. Clique nele para ativar ou desativar as legendas.'
     },
     glossary: {
-      english: 'By clicking on this button, it provides definitions for terms and concepts associated to Jira.',
+      english: 'By clicking on this Tab beside Menu, it provides definitions for terms and concepts associated to Jira.',
       arabic: 'هذا الزر يسمح لك بتمكين أو تعطيل الشرح لمحتوى الدورة. انقر عليه لتبديل الشرح تشغيل أو إيقاف.',
       urdu: 'اس بٹن کی مدد سے آپ کورس کی مواد کے لئے شرح کو فعال یا غیرفعال کرسکتے ہیں. اس پر کلک کریں تاکہ شرح کو آن یا آف کریں.',
       dutch: 'Deze knop stelt u in staat om bijschriften voor de cursusinhoud in of uit te schakelen. Klik erop om bijschriften aan of uit te zetten.',
@@ -310,7 +310,7 @@ function pimIntroTourWithoutSeekbar(language) {
       portuguese: 'Este botão permite que você habilite ou desabilite legendas para o conteúdo do curso. Clique nele para ativar ou desativar as legendas.'
   },
   glossary: {
-      english: 'By clicking on this button, it provides definitions for terms and concepts associated to Jira.',
+      english: 'By clicking on this button beside Menu, it provides definitions for terms and concepts associated to Jira.',
       arabic: 'هذا الزر يسمح لك بتمكين أو تعطيل الشرح لمحتوى الدورة. انقر عليه لتبديل الشرح تشغيل أو إيقاف.',
       urdu: 'اس بٹن کی مدد سے آپ کورس کی مواد کے لئے شرح کو فعال یا غیرفعال کرسکتے ہیں. اس پر کلک کریں تاکہ شرح کو آن یا آف کریں.',
       dutch: 'Deze knop stelt u in staat om bijschriften voor de cursusinhoud in of uit te schakelen. Klik erop om bijschriften aan of uit te zetten.',
