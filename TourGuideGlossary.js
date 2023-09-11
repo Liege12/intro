@@ -196,6 +196,11 @@ function pimIntroTour(language) {
         title: translations['titles'][language]['slide'],
       },
       {
+        element: '#glossary',
+        intro: translations['glossary'][language],
+        title: translations['titles'][language]['glossary'],
+      },
+      {
         element: '#links-right',
         intro: translations['resources'][language],
         title: translations['titles'][language]['resources'],
@@ -204,11 +209,6 @@ function pimIntroTour(language) {
         element: '#outline-content',
         intro: translations['menu'][language],
         title: translations['titles'][language]['menu'],
-      },
-      {
-        element: '#glossary',
-        intro: translations['glossary'][language],
-        title: translations['titles'][language]['glossary'],
       },
       {
         element: '#volume',
@@ -405,6 +405,11 @@ function pimIntroTourWithoutSeekbar(language) {
         title: translations['titles'][language]['slide'],
       },
       {
+        element: '#glossary',
+        intro: translations['glossary'][language],
+        title: translations['titles'][language]['glossary'],
+      },
+      {
         element: '#links-right',
         intro: translations['resources'][language],
         title: translations['titles'][language]['resources'],
@@ -413,11 +418,6 @@ function pimIntroTourWithoutSeekbar(language) {
         element: '#outline-content',
         intro: translations['menu'][language],
         title: translations['titles'][language]['menu'],
-      },
-      {
-        element: '#glossary',
-        intro: translations['glossary'][language],
-        title: translations['titles'][language]['glossary'],
       },
       {
         element: '#volume',
